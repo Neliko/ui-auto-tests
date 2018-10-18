@@ -11,7 +11,7 @@ namespace DoubleGis.Erm.UnitTestProject1.Elements
             currentElement = userDealElement;
         }
 
-        public IWebElement DealNameElement => currentElement.FindElement(By.XPath(".//*[contains(@class, 'text-with-match')]"));
+        public IWebElement DealNameElement => currentElement.FindElement(By.XPath(".//*[contains(@class, 'link')]"));
         public IWebElement CheckDealElement => currentElement.FindElement(By.XPath(".//*[contains(@class, 'checkbox')]"));
 
 		// ЛУчше бы описать как отдельный элемент  dealActivity, который содержит иконку, дату ,описание действия

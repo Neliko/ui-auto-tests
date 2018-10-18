@@ -65,12 +65,12 @@ namespace DoubleGis.Erm.UnitTestProject1.Tests
         public void DealTitleTest()
         {
             // User with any deal
-            const int DealId = 111;
+            const int DealId = 139;
             var page = new DealPage(chromeDriver);
             page.Open(DealId);
 
             // Нужно получат ожидаемое название работы.
-            const string ExpectedDealName = "Стальные двери Щит, торговая фирма - Щит, торговая фирма";
+            const string ExpectedDealName = "Русская охота, гостиничный комплекс";
 
             // "Работа" - вытащить в ресурсники
             var expetedTitle = $"Работа: {ExpectedDealName}";
@@ -86,6 +86,7 @@ namespace DoubleGis.Erm.UnitTestProject1.Tests
             //User with some deal
             const string UserAccount = "l.sveta";
             var page = new MainPage(chromeDriver);
+            page.Open();
             page.Open(UserAccount);
 
             const int DealCount = 2;

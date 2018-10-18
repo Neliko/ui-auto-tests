@@ -14,7 +14,7 @@ namespace DoubleGis.Erm.UnitTestProject1.Pages
             PageFactory.InitElements(webDriver, this);
         }
 
-        [FindsBy(How = How.XPath, Using = "//*[contains(@class, 'deal-header__deal-name')]")]
+        [FindsBy(How = How.XPath, Using = "//*[contains(@class, 'deal-title__deal-name')]")]
         public IWebElement DealName { get; set; }
 
         [FindsBy(How = How.XPath, Using = "//*[contains(@class, 'deal-toolbar__next-deal')]")]

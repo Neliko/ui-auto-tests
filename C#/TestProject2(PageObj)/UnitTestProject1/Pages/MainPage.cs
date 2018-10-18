@@ -25,7 +25,7 @@ namespace DoubleGis.Erm.UnitTestProject1.Pages
 
       public SearchBar SearchBar => new SearchBar(WebDriver.FindElement(By.XPath("//*[contains(@class, 'searchbar')]")));
 
-       public IList<UserDeal> Deals => GetUserDealolletion();
+       public IList<UserDeal> Deals => GetUserDealColletion();
 
        public IWebDriver Open(string account = null)
        {
@@ -38,9 +38,9 @@ namespace DoubleGis.Erm.UnitTestProject1.Pages
            return WebDriver;
        }
 
-       private IList<UserDeal> GetUserDealolletion()
+       private IList<UserDeal> GetUserDealColletion()
        {
-           var userdealList = WebDriver.FindElements(By.ClassName("deal"));
+           var userdealList = WebDriver.FindElements(By.XPath("//*[contains(@class,'deals-list__deal')]"));
 
            return userdealList.Select(x => new UserDeal(x)).ToList();
        }
