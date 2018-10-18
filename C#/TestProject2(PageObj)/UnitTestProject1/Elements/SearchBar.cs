@@ -16,9 +16,9 @@ namespace DoubleGis.Erm.UnitTestProject1.Elements
         public bool IsDisplayed => currentElement.Displayed;
         public bool IsEnabled => currentElement.Enabled;
 
-        public IWebElement TextField => currentElement.FindElement(By.XPath(".//*[contains(@class, 'search-bar__field')]"));
+        public IWebElement TextField => currentElement.FindElement(By.XPath(".//*[contains(@class, 'searchbar__field')]"));
 
-        public IWebElement SearchButton => currentElement.FindElement(By.XPath(".//*[contains(@class, 'search-bar__button')]"));
+        public IWebElement SearchButton => currentElement.FindElement(By.XPath(".//*[contains(@class, 'searchbar__button')]"));
 
         public SearchBar(IWebElement searchBarElement)
         {

@@ -38,84 +38,26 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="2Gis.Erm.BLCore.Model, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\repos\auto-tests\Source\Solutions\packages\2Gis.Erm.APIs.4.84.1-beta0002\lib\net461\2Gis.Erm.BLCore.Model.dll</HintPath>
-    </Reference>
-    <Reference Include="2Gis.Erm.Platform.API.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\repos\auto-tests\Source\Solutions\packages\2Gis.Erm.Platform.4.84.1-beta0002\lib\net461\2Gis.Erm.Platform.API.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="2Gis.Erm.Platform.Model">
-      <HintPath>..\..\..\repos\auto-tests\Source\Solutions\packages\2Gis.Erm.Platform.4.84.1-beta0002\lib\net461\2Gis.Erm.Platform.Model.dll</HintPath>
-    </Reference>
-    <Reference Include="2Gis.Erm.Platform.Model.EntityFramework">
-      <HintPath>..\..\..\repos\auto-tests\Source\Solutions\packages\2Gis.Erm.Platform.4.84.1-beta0002\lib\net461\2Gis.Erm.Platform.Model.EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="2GIS.NuClear.DI.Unity">
-      <HintPath>..\..\..\repos\auto-tests\Source\Solutions\packages\2GIS.NuClear.DI.Unity.2.0.0\lib\portable-net451+win81+wpa81\2GIS.NuClear.DI.Unity.dll</HintPath>
-    </Reference>
-    <Reference Include="2GIS.NuClear.Messaging.Transports.ServiceBus, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b3354850e43ac257, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\repos\auto-tests\Source\Solutions\packages\2GIS.NuClear.Messaging.Transports.ServiceBus.2.1.0\lib\net461\2GIS.NuClear.Messaging.Transports.ServiceBus.dll</HintPath>
-    </Reference>
-    <Reference Include="2GIS.NuClear.Model.Common, Version=0.0.0.0, Culture=neutral, PublicKeyToken=3ad4d1ee93087517, processorArchitecture=MSIL">
-      <HintPath>..\..\..\repos\auto-tests\Source\Solutions\packages\2GIS.NuClear.Model.Common.2.1.0\lib\portable-net451+win81+wpa81\2GIS.NuClear.Model.Common.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="2GIS.NuClear.OperationsLogging.API, Version=0.0.0.0, Culture=neutral, PublicKeyToken=2c187db36f8b5f72, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\repos\auto-tests\Source\Solutions\packages\2GIS.NuClear.OperationsLogging.API.5.2.1\lib\net461\2GIS.NuClear.OperationsLogging.API.dll</HintPath>
-    </Reference>
-    <Reference Include="2GIS.NuClear.Security.API, Version=2.0.0.0, Culture=neutral, PublicKeyToken=28ae40ac5f6ca219, processorArchitecture=MSIL">
-      <HintPath>..\..\..\repos\auto-tests\Source\Solutions\packages\2GIS.NuClear.Security.API.3.0.0\lib\net451\2GIS.NuClear.Security.API.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="2GIS.NuClear.Settings, Version=0.0.0.0, Culture=neutral, PublicKeyToken=5149c0be8b89ed8f, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\repos\auto-tests\Source\Solutions\packages\2GIS.NuClear.Settings.1.2.0\lib\net451\2GIS.NuClear.Settings.dll</HintPath>
-    </Reference>
-    <Reference Include="2GIS.NuClear.Settings.API, Version=0.0.0.0, Culture=neutral, PublicKeyToken=5149c0be8b89ed8f, processorArchitecture=MSIL">
-      <HintPath>..\..\..\repos\auto-tests\Source\Solutions\packages\2GIS.NuClear.Settings.API.1.2.0\lib\portable-net451+win81+wpa81\2GIS.NuClear.Settings.API.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="2GIS.NuClear.Settings.Unity">
-      <HintPath>..\..\..\repos\auto-tests\Source\Solutions\packages\2GIS.NuClear.Settings.Unity.1.2.0\lib\portable-net451+win81+wpa81\2GIS.NuClear.Settings.Unity.dll</HintPath>
-    </Reference>
-    <Reference Include="2GIS.NuClear.Storage, Version=1.0.0.0, Culture=neutral, PublicKeyToken=28ae40ac5f6ca219, processorArchitecture=MSIL">
-      <HintPath>..\..\..\repos\auto-tests\Source\Solutions\packages\2GIS.NuClear.Storage.EntityFramework.2.0.0\lib\net451\2GIS.NuClear.Storage.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="2GIS.NuClear.Storage.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=28ae40ac5f6ca219, processorArchitecture=MSIL">
-      <HintPath>..\..\..\repos\auto-tests\Source\Solutions\packages\2GIS.NuClear.Storage.API.2.0.1\lib\portable-net451+win81+wpa81\2GIS.NuClear.Storage.API.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="2GIS.NuClear.Storage.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=28ae40ac5f6ca219, processorArchitecture=MSIL">
-      <HintPath>..\..\..\repos\auto-tests\Source\Solutions\packages\2GIS.NuClear.Storage.EntityFramework.2.0.0\lib\net451\2GIS.NuClear.Storage.EntityFramework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="2GIS.NuClear.Tracing.API, Version=0.0.0.0, Culture=neutral, PublicKeyToken=343b5b3423ae5030, processorArchitecture=MSIL">
-      <HintPath>..\..\..\repos\auto-tests\Source\Solutions\packages\2GIS.NuClear.Tracing.API.2.0.1\lib\portable-net451+win81+wpa81\2GIS.NuClear.Tracing.API.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
       <HintPath>..\packages\Portable.BouncyCastle.1.8.1.2\lib\net4\BouncyCastle.Crypto.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\..\..\repos\auto-tests\Source\Solutions\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\..\..\repos\auto-tests\Source\Solutions\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Flurl, Version=1.0.10.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Flurl.1.0.10\lib\portable-net40+sl50+win+wpa81+wp80+MonoAndroid10+MonoTouch10\Flurl.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.Practices.Unity">
-      <HintPath>..\..\..\repos\auto-tests\Source\Solutions\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    <Reference Include="Grit.Authentication.Basic, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Grit.Authentication.Basic.1.0.4\lib\net461\Grit.Authentication.Basic.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Net.Http.Headers, Version=1.1.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.Headers.1.1.1\lib\netstandard1.1\Microsoft.Net.Http.Headers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Primitives.4.3.0\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="nunit.framework, Version=3.8.1.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
       <HintPath>..\..\..\repos\auto-tests\Source\Solutions\packages\NUnit.3.8.1\lib\net45\nunit.framework.dll</HintPath>
@@ -123,39 +65,104 @@
     </Reference>
     <Reference Include="RemoteBrowserMobProxy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\RemoteBrowserMobProxy.0.0.1\lib\net45\RemoteBrowserMobProxy.dll</HintPath>
-      <Private>True</Private>
     </Reference>
     <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\RestSharp.105.2.3\lib\net452\RestSharp.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\RestSharp.105.2.3\lib\net46\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="RichardSzalay.MockHttp, Version=1.3.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\RichardSzalay.MockHttp.1.3.1\lib\net45\RichardSzalay.MockHttp.dll</HintPath>
       <Private>True</Private>
-    </Reference>
-    <Reference Include="SKBKontur.SeleniumTesting">
-      <HintPath>C:\Users\s.pushkareva\Desktop\SKBKontur.SeleniumTesting-binaries\SKBKontur.SeleniumTesting.dll</HintPath>
     </Reference>
     <Reference Include="StreamExtended, Version=1.0.1.0, Culture=neutral, PublicKeyToken=bbfa0f1d54f50043, processorArchitecture=MSIL">
       <HintPath>..\packages\StreamExtended.1.0.18\lib\net45\StreamExtended.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.AppContext, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.AppContext.4.3.0\lib\net46\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.3.0\lib\netstandard1.1\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
+    <Reference Include="System.Console, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.3.0\lib\net46\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.4.3.0\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="Titanium.Web.Proxy, Version=3.0.130.0, Culture=neutral, PublicKeyToken=8e41e1f1c790d7cf, processorArchitecture=MSIL">
-      <HintPath>..\packages\Titanium.Web.Proxy.3.0.130\lib\net45\Titanium.Web.Proxy.dll</HintPath>
+    <Reference Include="System.Globalization.Calendars, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Globalization.Calendars.4.3.0\lib\net46\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebDriver, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Selenium.WebDriver.3.5.0\lib\net40\WebDriver.dll</HintPath>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.4.3.0\lib\net46\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.0\lib\net46\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.1.2\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.3.0\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="WebDriver.Support, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Selenium.Support.3.5.0\lib\net40\WebDriver.Support.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.3.0\lib\netstandard1.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.1.2\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.1.2\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.ReaderWriter.4.3.0\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="WebApiProxyGen, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebApiProxyServer.1.0.4\lib\WebApiProxyGen.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver, Version=3.14.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.14.0\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.8.0\lib\net45\WebDriver.Support.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Choose>
@@ -182,37 +189,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Elements\UserDeal.cs" />
+    <None Include="app.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\repos\auto-tests\Crm\Workspace\2Gis.Crm.Workspace.Functional.Tests\2Gis.Crm.Workspace.Functional.Tests.csproj">
-      <Project>{b7b14a11-dac2-444a-aa04-fc7c0f930cf3}</Project>
-      <Name>2Gis.Crm.Workspace.Functional.Tests</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\repos\auto-tests\Source\Crm\TestingTools\2Gis.Crm.Testing.Common\2Gis.Crm.Testing.Common.csproj">
-      <Project>{51f28914-56c3-4181-9c35-b395f11932a9}</Project>
-      <Name>2Gis.Crm.Testing.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\repos\auto-tests\Source\Database\2Gis.Erm.Testing.WorkspaceDatabase\2Gis.Erm.Testing.WorkspaceDatabase.csproj">
-      <Project>{90cc8866-60c7-4336-9825-dd1d2810cc5c}</Project>
-      <Name>2Gis.Erm.Testing.WorkspaceDatabase</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\repos\auto-tests\Source\Infrastructure\2Gis.AsyncFlow.Infrastructure\2Gis.AutoQA.Infrastructure.csproj">
-      <Project>{146D2F64-D2C8-4A3C-BEFA-B8ABE1340B7D}</Project>
-      <Name>2Gis.AutoQA.Infrastructure</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\repos\auto-tests\Source\TestingTools\2Gis.Erm.WebService.Clients\2Gis.Erm.WebService.Clients.csproj">
-      <Project>{F720F9A9-B2FC-4EFF-8318-D01620DF3ED0}</Project>
-      <Name>2Gis.Erm.WebService.Clients</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\repos\auto-tests\Source\TestingTools\2Gis.Erm.WebService.Functional\2Gis.Erm.WebService.Functional.csproj">
-      <Project>{4dfce5ef-1f6e-46e1-8991-9451725bf50e}</Project>
-      <Name>2Gis.Erm.WebService.Functional</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\repos\auto-tests\Source\TestingTools\WebService.Testing.Core\2Gis.Erm.WebService.Testing.Core.csproj">
-      <Project>{6fbd0dc3-5d17-4568-b1f5-88613536c646}</Project>
-      <Name>2Gis.Erm.WebService.Testing.Core</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <Choose>

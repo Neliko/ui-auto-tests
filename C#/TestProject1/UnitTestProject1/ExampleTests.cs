@@ -42,18 +42,18 @@ namespace DoubleGis.Erm.UnitTestProject1
         {
             ChromeDriver.Navigate().GoToUrl(MainUrl);
 
-            var searchBarElement = ChromeDriver.FindElement(By.XPath("//*[contains(@class, 'search-bar')]"));
+            var searchBarElement = ChromeDriver.FindElement(By.XPath("//*[contains(@class, 'searchbar')]"));
             // проверяем, что он отображен
             Assert.That(searchBarElement.Displayed, Is.True);
             Assert.That(searchBarElement.Enabled, Is.True);
-            var text = searchBarElement.FindElement(By.XPath("//*[contains(@class, 'search-bar__field')]")).GetAttribute("placeholder");
+            var text = searchBarElement.FindElement(By.XPath("//*[contains(@class, 'searchbar__field')]")).GetAttribute("placeholder");
 
             ////проверяем, что текст соответствует ожидаемому
             const string ExpextedSearchText = "Поиск по названию работы или фирмы";
             Assert.That(text, Is.EqualTo(ExpextedSearchText));
 
             //// Проверяем наличие внутри элемента строки поиска кнопки поиска
-            var searchBarButton = searchBarElement.FindElement(By.XPath("//*[contains(@class, 'search-bar__button')]"));
+            var searchBarButton = searchBarElement.FindElement(By.XPath("//*[contains(@class, 'searchbar__button')]"));
             Assert.That(searchBarButton.Enabled, Is.True);
             Assert.That(searchBarButton.Displayed, Is.True);
         }
@@ -62,16 +62,16 @@ namespace DoubleGis.Erm.UnitTestProject1
         public void DealTitleTest()
         {
             // User with any deal
-            const int DealId = 111;
+            const int DealId = 139;
             var url = $"{DealUrl}/{DealId}";
            ChromeDriver.Navigate().GoToUrl(url);
 
             // Нужно получат ожидаемое название работы.
-            var ExpectedDealName = "Стальные двери Щит, торговая фирма - Щит, торговая фирма";
+            var ExpectedDealName = "Русская охота, гостиничный комплекс";
             // "Работа" - вытащить в ресурсники
             var expetedTitle = $"Работа: {ExpectedDealName}";
 
-            var titleElement = ChromeDriver.FindElement(By.XPath("//*[contains(@class, 'deal-header__deal-name')]"));
+            var titleElement = ChromeDriver.FindElement(By.XPath("//*[contains(@class, 'deal-title__deal-name')]"));
             Assert.That(titleElement != null, $"Couldn't find header for the deal = {ExpectedDealName}");
             Assert.That(titleElement.Text, Is.EqualTo(expetedTitle));
 
@@ -83,25 +83,27 @@ namespace DoubleGis.Erm.UnitTestProject1
         {
             // User with some deal
             const string UserAccount = "l.sveta";
-            ChromeDriver.Navigate().GoToUrl($"{MainUrl}?me={UserAccount}");
+            ChromeDriver.Navigate().GoToUrl($"{MainUrl}");
+            ChromeDriver.Navigate().GoToUrl($"{MainUrl}?me={ UserAccount}");
 
-            var firstDealElementCondition = By.ClassName("deal");
-            // find first deal in list
+            var dealElementsCondition = By.XPath("//*[contains(@class, 'deals-list__deal')]");
+
+            // find deal in list
             var dealCount = 2;
-            var deals = ChromeDriver.FindElements(firstDealElementCondition).Take(dealCount).ToList();
+            var deals = ChromeDriver.FindElements(dealElementsCondition).Take(dealCount).ToList();
             Assert.That(deals.Count == dealCount, $"Couldn't find {dealCount} deal in deal list for the user = {UserAccount}");
 
             var firstDeal = deals.FirstOrDefault();
-            var dealName = firstDeal.FindElement(By.XPath(".//*[contains(@class, 'text-with-match')]")).Text;
+            var dealName = firstDeal.FindElement(By.XPath(".//*[contains(@class, 'link')]")).Text;
 
             var secondDeal = deals.LastOrDefault();
-            var dealNextName = secondDeal.FindElement(By.XPath(".//*[contains(@class, 'text-with-match')]")).Text;
+            var dealNextName = secondDeal.FindElement(By.XPath(".//*[contains(@class, 'link')]")).Text;
 
             firstDeal.Click();
 
             var expetedTitle = $"Работа: {dealName}";
 
-            var titleElement = ChromeDriver.FindElement(By.XPath("//*[contains(@class, 'deal-header__deal')]"));
+            var titleElement = ChromeDriver.FindElement(By.XPath("//*[contains(@class, 'deal-title__deal-name')]"));
             Assert.That(titleElement != null, $"Couldn't find header for the deal = {expetedTitle}");
             Assert.That(titleElement.Text, Is.EqualTo(expetedTitle));
             Assert.That(ChromeDriver.Title, Is.EqualTo(expetedTitle));
@@ -114,7 +116,7 @@ namespace DoubleGis.Erm.UnitTestProject1
 
             var expetedNextTitle = $"Работа: {dealNextName}";
 
-            titleElement = ChromeDriver.FindElement(By.XPath("//*[contains(@class, 'deal-header__deal-name')]"));
+            titleElement = ChromeDriver.FindElement(By.XPath("//*[contains(@class, 'deal-title__deal-name')]"));
             Assert.That(titleElement != null, $"Couldn't find header for the deal = {expetedNextTitle}");
             Assert.That(titleElement.Text, Is.EqualTo(expetedNextTitle));
             Assert.That(ChromeDriver.Title, Is.EqualTo(expetedNextTitle));

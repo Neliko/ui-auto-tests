@@ -23,7 +23,7 @@ namespace DoubleGis.Erm.UnitTestProject1.Pages
        [FindsBy(How = How.XPath, Using = "//*[contains(@class,'title__text')]")]
        public IWebElement MainTitle { get; set; } 
 
-      public SearchBar SearchBar => new SearchBar(WebDriver.FindElement(By.XPath("//*[contains(@class, 'search-bar')]")));
+      public SearchBar SearchBar => new SearchBar(WebDriver.FindElement(By.XPath("//*[contains(@class, 'searchbar')]")));
 
        public IList<UserDeal> Deals => GetUserDealolletion();
 
